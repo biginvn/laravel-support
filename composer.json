@@ -1,0 +1,43 @@
+{
+    "name": "bigin/laravel-support",
+    "description": "bigin laravel support",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Trinh Le",
+            "email": "lehuutrinh32@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/biginvn/laravel-support",
+    "keywords": [
+        "Laravel",
+        "Support"
+    ],
+    "require": {
+        "illuminate/support": "~5|~6|~7|~8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6|~7|~8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bigin\\Support\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bigin\\Support\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bigin\\Support\\SupportServiceProvider"
+            ],
+            "aliases": {
+                "MailVariable": "Bigin\\Support\\Facades\\MailVariable"
+            }
+        }
+    }
+}
