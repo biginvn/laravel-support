@@ -1,6 +1,6 @@
 <?php
 
-namespace Bigin\Support\Contracts;
+namespace Biginvn\Support\Contracts;
 
 interface HttpCodeContract
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Bigin\Support\Providers;
+namespace Biginvn\Support\Providers;
 
-use Bigin\Support\Facades\IOCServiceFacade;
-use Bigin\Support\Utils\IOCService;
+use Biginvn\Support\Facades\IOCServiceFacade;
+use Biginvn\Support\Utils\IOCService;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {

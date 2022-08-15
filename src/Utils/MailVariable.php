@@ -1,6 +1,6 @@
 <?php
 
-namespace Bigin\Support\Utils;
+namespace Biginvn\Support\Utils;
 
 use Carbon\Carbon;
 use Illuminate\Support\Arr;
@@ -102,7 +102,7 @@ class MailVariable
     protected function loadTemplates(array $templates): array
     {
         return array_map(function ($template) {
-            $templatePath = (config('bigin.support.support.email_templates') ?: __DIR__ . '/../../resources/email-templates/') . "{$template}.tpl";
+            $templatePath = (config('biginvn.support.support.email_templates') ?: __DIR__ . '/../../resources/email-templates/') . "{$template}.tpl";
 
             return File::exists($templatePath) ? get_file_data($templatePath, false) : '';
         }, $templates);

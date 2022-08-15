@@ -1,6 +1,6 @@
 <?php
 
-namespace Bigin\Support\Traits;
+namespace Biginvn\Support\Traits;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Config;

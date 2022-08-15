@@ -1,5 +1,5 @@
 {
-    "name": "bigin/laravel-support",
+    "name": "biginvn/laravel-support",
     "description": "bigin laravel support",
     "license": "BSD-3-Clause",
     "authors": [
@@ -22,21 +22,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Bigin\\Support\\": "src/"
+            "Biginvn\\Support\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Bigin\\Support\\Tests\\": "tests"
+            "Biginvn\\Support\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Bigin\\Support\\SupportServiceProvider"
+                "Biginvn\\Support\\SupportServiceProvider"
             ],
             "aliases": {
-                "MailVariable": "Bigin\\Support\\Facades\\MailVariable"
+                "MailVariable": "Biginvn\\Support\\Facades\\MailVariable"
             }
         }
     }

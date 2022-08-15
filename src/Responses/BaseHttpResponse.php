@@ -1,10 +1,10 @@
 <?php
 
-namespace Bigin\Support\Responses;
+namespace Biginvn\Support\Responses;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Facades\URL;
-use Bigin\Support\Contracts\HttpCodeContract;
+use Biginvn\Support\Contracts\HttpCodeContract;
 
 class BaseHttpResponse
 {

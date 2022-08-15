@@ -1,6 +1,6 @@
 <?php
 
-namespace Bigin\Support\Facades;
+namespace Biginvn\Support\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

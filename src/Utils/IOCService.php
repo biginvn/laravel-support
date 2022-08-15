@@ -1,6 +1,6 @@
 <?php
 
-namespace Bigin\Support\Utils;
+namespace Biginvn\Support\Utils;
 
 use Illuminate\Console\Application as Artisan;
 use Illuminate\Console\Command;

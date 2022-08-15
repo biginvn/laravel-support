@@ -1,1 +1,1 @@
-{!! \Bigin\Support\Facades\MailVariable::prepareData("{{ header}} {$htmlContent} {{ footer }}") !!}
+{!! \Biginvn\Support\Facades\MailVariable::prepareData("{{ header}} {$htmlContent} {{ footer }}") !!}

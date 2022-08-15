@@ -1,8 +1,8 @@
 <?php
 
-namespace Bigin\Support;
+namespace Biginvn\Support;
 
-use Bigin\Support\Utils\MailVariable;
+use Biginvn\Support\Utils\MailVariable;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
 
@@ -16,8 +16,8 @@ class SupportServiceProvider extends ServiceProvider
     public function boot(): void
     {
         // Publishing is only necessary when using the CLI.
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'bigin/support');
-        $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'bigin/support');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'biginvn/support');
+        $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'biginvn/support');
 
         if ($this->app->runningInConsole()) {
             $this->bootForConsole();
@@ -33,18 +33,18 @@ class SupportServiceProvider extends ServiceProvider
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__ . '/../config/support.php' => config_path('bigin/support/support.php'),
-        ], 'bigin');
+            __DIR__ . '/../config/support.php' => config_path('biginvn/support/support.php'),
+        ], 'biginvn');
 
         // Publishing the view files.
         $this->publishes([
-            __DIR__ . '/../resources/views' => base_path('resources/views/vendor/bigin/support'),
-        ], 'bigin');
+            __DIR__ . '/../resources/views' => base_path('resources/views/vendor/biginvn/support'),
+        ], 'biginvn');
 
         // Publishing the translation files.
         $this->publishes([
-            __DIR__ . '/../resources/lang' => resource_path('lang/vendor/bigin/support'),
-        ], 'bigin');
+            __DIR__ . '/../resources/lang' => resource_path('lang/vendor/biginvn/support'),
+        ], 'biginvn');
     }
 
     /**
@@ -58,7 +58,7 @@ class SupportServiceProvider extends ServiceProvider
             File::requireOnce($helper);
         }
 
-        $this->mergeConfigFrom(__DIR__ . '/../config/support.php', 'bigin.support.support');
+        $this->mergeConfigFrom(__DIR__ . '/../config/support.php', 'biginvn.support.support');
 
         // Register the service the package provides.
         $this->app->singleton('MailVariable', function () {
@@ -66,7 +66,7 @@ class SupportServiceProvider extends ServiceProvider
         });
 
         $this->app->singleton('IOCService', function ($app) {
-            $service = config('bigin.support.support.ioc_service_provider');
+            $service = config('biginvn.support.support.ioc_service_provider');
             return new $service($app);
         });
     }
